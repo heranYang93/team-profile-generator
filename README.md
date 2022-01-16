@@ -7,7 +7,7 @@
   <p align="center">
     This CLI app will generate a team profile following a preset format.
     <br />
-    <a href="./demo/demo.mp4">View Demo</a>
+    <a href="https://github.com/heranYang93/team-profile-generator/blob/main/demo/demo.mp4">View Demo</a>
     ·
     <a href="https://github.com/heranyang93/team-profile-generator/issues">Report Bug</a>
     ·
@@ -15,13 +15,14 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#user-story">User Story</a></li>
+        <li><a href="#acceptance-criteria">Acceptance Criteria</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -39,27 +40,59 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]<a href="./demo/result.png"></a>
+![Product Screenshoot](./demo/result.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This Node.js command-line application is built to take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 
-Here's why:
+Testing is key to making code maintainable, so tests have been organised to ensure that the app passes each criteria.
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+### User Story
 
-Use the `BLANK_README.md` to get started.
+```md
+AS A manager
+I WANT to generate a webpage that displays my team's basic info
+SO THAT I have quick access to their emails and GitHub profiles
+```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Acceptance Criteria
+
+GIVEN a command-line application that accepts user input
+
+- WHEN I am prompted for my team members and their information
+  `THEN an HTML file is generated that displays a nicely formatted team roster based on user input`
+
+- WHEN I click on an email address in the HTML
+  `THEN my default email program opens and populates the TO field of the email with the address`
+
+- WHEN I click on the GitHub username
+  THEN that GitHub profile opens in a new tab
+
+- WHEN I start the application
+  `THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number`
+
+- WHEN I enter the team manager’s name, employee ID, email address, and office number
+  `THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team`
+
+- WHEN I select the engineer option
+  `THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu`
+
+- WHEN I select the intern option
+  `THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu`
+- WHEN I decide to finish building my team
+  `THEN I exit the application, and the HTML is generated`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The following dependencies/resources have been used:
 
 - [Node.js](https://nodejs.org/en/)
+- [Inquirer.js](https://www.npmjs.com/package/inquirer)
 - [Jest](https://jestjs.io/)
 - [Fontawesome](https://fontawesome.com/)
 
@@ -67,41 +100,42 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Node and NPM must be installed prior to initiating the app
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+- Install all necessary dependencies
+  - Inquirer and Jest must be installed
+  - Point the terminal to the main directory and run the following command
+  ```sh
+  npm i
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- run the following command
+
+  ```
+  node run index.js
+  ```
+
+- Follow the prompted questions
+- Find the generated page in
+
+  ```
+  ./dist/pages/index.html
+  ```
+
+- Should you want to deploy the page, copy the following folders as well as their content into the directory of your selection
+
+  ```
+  ./dist/pages
+  ./dist/style
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

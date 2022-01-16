@@ -23,7 +23,7 @@ describe("EMPLOYEE object testing", () => {
   describe("check function getID()", () => {
     it("This getID function will return the ID of the EMPLOYEE object", () => {
       const employeeOBJ = new Employee("John Doe", "1A1", "john.doe@gmail.com");
-      expect(employeeOBJ.getID()).toEqual("1A1");
+      expect(employeeOBJ.getId()).toEqual("1A1");
     });
   });
 

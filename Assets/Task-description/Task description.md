@@ -1,12 +1,18 @@
 # 10 Object-Oriented Programming: Team Profile Generator
 
-## Your Task
+## Task
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
+The task is to build a Node.js command-line application that
 
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
+- takes in information about employees on a software engineering team,
+  then generates an HTML webpage that displays summaries for each person.
 
-> **Note**: There is no starter code for this assignment.
+- Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
+
+Because this application won’t be deployed, you’ll need to provide
+**_ a link to a walk-through video _**
+that demonstrates its functionality and all of the tests passing.
+You’ll need to **_ submit a link _** to the video AND add it to the readme of your project.
 
 ## User Story
 

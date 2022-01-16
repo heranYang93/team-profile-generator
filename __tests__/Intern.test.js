@@ -19,7 +19,7 @@ describe("Intern object testing", () => {
     });
   });
 
-  describe("check function getGH()", () => {
+  describe("check function getSchool()", () => {
     it("This getGH function will return the SCHOOL NAME of the INTERN object", () => {
       const internOBJ = new Intern(
         "John Doe",

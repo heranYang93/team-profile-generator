@@ -15,9 +15,12 @@
     "url": "git+https://github.com/heranYang93/team-profile-generator.git"
   },
   "author": "",
-  "license": "MIT",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/heranYang93/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/heranYang93/team-profile-generator#readme"
+  "homepage": "https://github.com/heranYang93/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
